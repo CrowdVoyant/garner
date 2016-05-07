@@ -1,5 +1,6 @@
 from pymongo import MongoClient
-from scrapping_methods import get_rss_link, get_rtc_links, get_see_all_link, get_ncl
+from scrapping_methods import get_rss_link, get_rtc_links, get_see_all_link
+from regex_ops import get_ncl
 from feed_entries import get_feed_entries
 from article_text import get_article_text
 client = MongoClient("mongodb://localhost:27017")
